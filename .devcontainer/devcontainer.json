@@ -1,0 +1,8 @@
+{
+    "name": "Hadoop Development",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [9870, 8088],
+    "postCreateCommand": "hdfs namenode -format && start-dfs.sh && start-yarn.sh",
+    "remoteUser": "root"
+  }
+  
